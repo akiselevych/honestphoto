@@ -1,0 +1,28 @@
+@import "variables";
+
+.since {
+    color: $textGreyColor;
+    text-align: center;
+}
+.title {
+    max-width: 594px;
+    color: $textGreyColor;
+    @media (max-width: 370px) {
+        font-size: 24px;
+    }
+}
+.text {
+    max-width: 287px;
+    text-align: right;
+    color: $textGreyColor;
+}
+.overlay {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 555999;
+}

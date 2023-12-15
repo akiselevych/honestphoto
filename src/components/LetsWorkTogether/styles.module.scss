@@ -1,0 +1,61 @@
+@import "@/styles/variables";
+
+.container {
+    padding: 128px 0;
+    display: flex;
+    justify-content: center;
+    background-color: $textGreyColor;
+}
+.content {
+    max-width: 848px;
+    padding: 0 16px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    position: relative;
+    z-index: 20;
+}
+.titleBlock {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+    @media (max-width: $mobileSize) {
+        gap: 8px;
+    }
+}
+.topRaw {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    img {
+        width: calc(33% - 32px);
+        height: auto;
+    }
+    @media (max-width: $mobileSize) {
+        gap: 10px;
+    }
+}
+.bottomRaw {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+    align-items: center;
+}
+.label {
+    position: absolute;
+    &:nth-child(2) {
+        left: 60px;
+    }
+    &:nth-child(3) {
+        right: 8px;
+        top: 40%;
+    }
+    &:nth-child(4) {
+        left: 8px;
+        bottom: 64px;
+    }
+}

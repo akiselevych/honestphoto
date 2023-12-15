@@ -1,0 +1,66 @@
+@import "@/styles/variables";
+
+.container {
+    padding: 98px 8px;
+    display: flex;
+    justify-content: center;
+    background-color: $primaryColor;
+    background: url("../../../public/images/Bg.png") 0 0/30px 30px repeat;
+    color: $textGreyColor;
+}
+.content {
+    max-width: 1140px;
+    padding: 0 16px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    position: relative;
+    z-index: 20;
+}
+.titleBlock {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+    @media (max-width: $mobileSize) {
+        gap: 8px;
+    }
+}
+.topRaw {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    img {
+        width: calc(33% - 32px);
+        height: auto;
+    }
+    @media (max-width: $mobileSize) {
+        gap: 10px;
+    }
+}
+.bottomRaw {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+    align-items: center;
+}
+.btn {
+    width: 163px;
+}
+.label {
+    position: absolute;
+    &:nth-child(2) {
+        left: 60px;
+    }
+    &:nth-child(3) {
+        right: 8px;
+        top: 40%;
+    }
+    &:nth-child(4) {
+        left: 8px;
+        bottom: 64px;
+    }
+}

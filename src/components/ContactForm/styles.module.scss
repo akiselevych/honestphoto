@@ -1,0 +1,90 @@
+@import "@/styles/variables";
+.container {
+  box-shadow: 0px 0px 32px 0px #1553B70F;
+  background-color: #FFFFFF;
+  color: black;
+  max-width: 656px;
+  position: fixed;
+  bottom: 30%;
+  right: 50%;
+  transform: translateX(50%);
+  z-index: 9914123;
+  padding: 40px;
+  border-radius: 8px;
+  min-width: 320px;
+  width: 100%;
+  @media (max-width: 670px) {
+    width: 70%;
+  }
+}
+
+.header{
+
+}
+.title{
+  margin-bottom: 24px;
+}
+.closeBtn{
+  position: absolute;
+  right: 2%;
+  top: 6%;
+  cursor: pointer;
+}
+.form{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 12px;
+}
+.inputWrapper{
+  select{
+    background-color: white;
+    padding-bottom: 17px;
+  }
+}
+.label{
+  display: block;
+  margin-bottom: 8px;
+}
+.input{
+  border: 1px solid #2D2D2D;
+  border-radius: 6px;
+  width: 97%;
+  padding-left: 3%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+.buttom{
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.email{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+}
+.message{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  textarea{
+    height: 124px;
+    padding-left: 2%;
+    width: 98%;
+  }
+}
+.submitbtn{
+  width: 100% !important;
+}
+
+.error{
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 32px;
+  color: red;
+}
+.success{
+  width: 24px;
+  height: 24px;
+}

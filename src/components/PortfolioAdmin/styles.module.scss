@@ -1,0 +1,102 @@
+@import "@/styles/variables";
+.container {
+  padding-bottom: 96px;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+
+.text {
+  margin-right: 24px;
+}
+
+.title {
+  margin-bottom: 24px;
+}
+
+.giftLink {
+  color: $textGreyColor;
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  margin: 0 auto 64px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+  @media (max-width: 1320px) {
+    width: 95%;
+  }
+
+  @media (max-width: 1024px) and (min-width: 750px) {
+    justify-content: space-evenly;
+  }
+  
+  @media (max-width: 675px) {
+    justify-content: center;
+  }
+
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+
+  &.isDragging {
+    opacity: 0.5;
+  }
+
+  &.isEditing {
+    opacity: 0.6;
+  }
+}
+
+.spinner {
+  position: absolute;
+  top: 5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99999;
+}
+
+.item {
+  width: 312px;
+  object-fit: cover;
+  margin-bottom: 14px;
+
+  @media (max-width: 675px) {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.masonry {
+  display: flex;
+}
+
+.bigCol {
+  @media (max-width: 1024px) {
+    display: none;
+  }
+}
+
+.mediumCol {
+  width: 312px;
+  @media (min-width: 1025px) {
+    display: none;
+  }
+  @media (max-width: 675px) {
+    display: none;
+  }
+}
+
+.smallCol {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: 676px) {
+    display: none;
+  }
+}

@@ -1,0 +1,65 @@
+@import "@/styles/variables";
+.container {
+    background-color: $primaryColor;
+    background: url("../../../public/images/Bg.png") 0 0/30px 30px repeat;
+    padding-top: 96px;
+    padding-bottom: 96px;
+    padding-left: 16px;
+    padding-right: 16px;
+
+}
+.wrapper{
+    margin: 0 auto;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header {
+    width: 72%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 0;
+    margin-bottom: 64px;
+    @media (max-width: 1061px) {
+        width: 92%;
+    }
+}
+.title {
+    max-width: 250px;
+    color: $textGreyColor;
+    margin-right: 30px;
+    @media (max-width: 450px) {
+        margin-right: 15px;
+    }
+}
+.giftLink {
+    color: $textGreyColor;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.content {
+    width: 72%;
+    //margin: 0 auto;
+
+    @media (max-width: 1061px) {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.masonry{
+    display: flex;
+    gap: clamp(0.625rem, -6rem + 10vw, 3rem);
+}
+.item{
+    &:nth-child(1){
+
+    }
+    &:nth-child(2n){
+
+    }
+}

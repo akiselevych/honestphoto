@@ -1,0 +1,80 @@
+@import "@/styles/variables";
+.container{
+  background-color: $textGreyColor;
+  padding-bottom: 56px;
+}
+.wrapper{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.slider{
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.slide{
+  height: fit-content;
+}
+.smallImage{
+  width: auto;
+  height: 156px;
+  margin-bottom: 32px;
+}
+.bigImage{
+  object-fit: cover;
+  width: auto;
+  height: 515px;
+  margin-bottom: 32px;
+}
+.sliderWrapper{
+  @media (max-width: 980px) {
+    display: none;
+  }
+}
+.cardsWrapper{
+  padding-top: 96px;
+  display: none;
+  flex-direction: column;
+  gap: 48px;
+  @media (max-width: 980px) {
+    display: flex;
+  }
+}
+
+.name{
+  margin-bottom: 16px;
+}
+.price{
+
+}
+.discount{
+  margin-top: 36px;
+  margin-bottom: 32px;
+  width: 78%;
+}
+.upperdecor{
+  position: absolute;
+  left: 106%;
+  top: -3%;
+  width: inherit;
+
+}
+.bigTitle{
+  margin-bottom: 16px;
+}
+.time{
+
+}
+.bookButton{
+  //display: block;
+  //padding: 16px 32px;
+  //position: absolute;
+  //right: -110%;
+  //top: 110%;
+  @media (max-width: 1180px) {
+    //padding: 20px 0 20px 60px;
+  }
+  @media (max-width: 1040px) {
+    //padding: 20px 0 20px 5px;
+  }
+}

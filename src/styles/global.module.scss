@@ -1,0 +1,148 @@
+@import "@/styles/variables";
+
+.primaryButton {
+    padding: 16px 32px;
+    background-color: $primaryColor;
+    color: $secondaryColor;
+    border-radius: 6px;
+    border: 1px solid $primaryColor;
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    &:hover {
+        background: #404040;
+    }
+    &:focus {
+        background: #696969;
+    }
+    &:active {
+        background: #696969;
+    }
+    &:disabled {
+        background-color: #e5e8f0;
+        color: #9fa5b9;
+    }
+}
+.disablePrimaryButton {
+    background: #e5e8f0;
+    color: #9fa5b9;
+    pointer-events: none;
+    box-shadow: none;
+    border: none;
+}
+
+.secondaryButton {
+    padding: 16px 32px;
+    background-color: $secondaryColor;
+    color: $primaryColor;
+    border: 1px solid $primaryColor;
+    border-radius: 6px;
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    &:hover {
+        background: #eaeaea;
+    }
+    &:active {
+        background: #dadada;
+    }
+    &:focus {
+        background: #dadada;
+    }
+}
+
+.disableSecondaryButton {
+    border: 1px solid #9fa5b9;
+    color: #9fa5b9;
+    pointer-events: none;
+    &:hover {
+        border: 1px solid #9fa5b9;
+        color: #9fa5b9;
+    }
+    &:active {
+        border: 1px solid #9fa5b9;
+        color: #9fa5b9;
+    }
+    &:focus {
+        border: 1px solid #9fa5b9;
+        color: #9fa5b9;
+    }
+}
+
+.h1 {
+    font-size: clamp(1.75rem, 1.12rem + 3.6vw, 4rem);
+    font-weight: 300;
+    line-height: clamp(3rem, 2.16rem + 4.8vw, 6rem);
+}
+.h2 {
+    font-size: clamp(1.75rem, 1.54rem + 1.2vw, 2.5rem);
+    font-weight: 300;
+    line-height: clamp(2.5rem, 2.22rem + 1.6vw, 3.5rem); /* 140% */
+}
+.h3 {
+    font-size: clamp(1.5rem, 1.43rem + 0.4vw, 1.75rem);
+    font-weight: 300;
+    line-height: clamp(2rem, 1.93rem + 0.4vw, 2.25rem);
+}
+.h4 {
+    font-size: clamp(1.25rem, 1.18rem + 0.4vw, 1.5rem);
+    font-weight: 300;
+    line-height: clamp(1.75rem, 1.68rem + 0.4vw, 2rem);
+}
+.h5 {
+    font-size: clamp(1rem, 0.93rem + 0.4vw, 1.25rem);
+    font-weight: 500;
+    line-height: 24px;
+}
+.body1 {
+    font-size: clamp(1rem, 0.93rem + 0.4vw, 1.25rem);
+    font-weight: 400;
+    line-height: clamp(1.5rem, 1.43rem + 0.4vw, 1.75rem);
+}
+.body2 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    @media (max-width: $mobileSize) {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+.body2Bold {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    @media (max-width: $mobileSize) {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+.body3 {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    @media (max-width: $mobileSize) {
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
+.body3SemiBold {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    @media (max-width: $mobileSize) {
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
+.bodyBig {
+    font-size: clamp(3rem, 2.243rem + 4.17vw, 6rem);
+    font-style: normal;
+    font-weight: 500;
+    line-height: clamp(4rem, 2.991rem + 5.57vw, 8rem);
+}

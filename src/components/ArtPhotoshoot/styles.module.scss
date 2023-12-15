@@ -1,0 +1,103 @@
+@import "@/styles/variables";
+
+.container {
+    background-color: $primaryColor;
+    background: url("../../../public/images/Bg.png") 0 0/30px 30px repeat;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: $textGreyColor;
+}
+.content {
+    max-width: 1040px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 48px;
+    padding: 96px 8px;
+    @media (max-width: 1142px) {
+        flex-direction: column;
+        align-items: center;
+        .title {
+            text-align: center;
+        }
+    }
+}
+.leftCol {
+    max-width: 332px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 48px;
+    @media (max-width: 1142px) {
+        max-width: 600px;
+        align-items: center;
+    }
+}
+
+.textBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.btn {
+    width: 284px;
+}
+.rightCol {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 48px;
+    max-height: 1228px;
+    @media (max-width: 1142px) {
+        flex-direction: row;
+        justify-content: center;
+        max-height: 100%;
+    }
+}
+////card
+.card {
+    width: 268px;
+    img {
+        width: 100%;
+        height: 310px;
+        margin-bottom: 32px;
+        object-fit: cover;
+    }
+    @media (max-width: $mobileSize) {
+        width: 100%;
+    }
+}
+.thirdCard {
+    margin-top: 227px;
+    @media (max-width: 1142px) {
+        margin-top: 0px;
+    }
+}
+.cardTextBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.cardPriceBlock {
+    display: flex;
+    gap: 4px;
+}
+.old {
+    text-decoration: line-through;
+    color: #6b6b6b;
+}
+.new {
+}
+.photoshootBook {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: $textGreyColor;
+    img{
+        width: 24px;
+        height: 24px;
+        margin-bottom: 0;
+    }
+}

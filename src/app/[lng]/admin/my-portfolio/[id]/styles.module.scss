@@ -1,0 +1,123 @@
+.container {
+  max-width: 1040px;
+  margin: 128px auto 122px;
+}
+
+.item {
+  margin-top: 56px;
+}
+
+.imageWrapper {
+  margin-bottom: 24px;
+}
+
+.image {
+  width: auto;
+  height: 100%;
+  max-height: 500px;
+}
+
+.form {
+
+}
+.content{
+  display: flex;
+  margin-bottom: 48px;
+}
+.left {
+  width: 100%;
+  max-width: 512px;
+  margin-right: 64px;
+}
+
+.inputWrapper {
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+
+.label {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.input {
+  border: 1px solid #2D2D2D;
+  border-radius: 6px;
+  width: 97%;
+  padding-left: 3%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  resize: vertical;
+}
+
+.right {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 70px;
+}
+
+.title {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.pickedFileWrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pickedFileName {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.error {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 32px;
+  color: red;
+}
+
+.submitBtn {
+  cursor: pointer;
+  width: fit-content;
+  background: #2D2D2D;
+  color: white;
+  padding: 16px 32px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+
+  &:disabled{
+    background: #a5a5a5;
+    cursor: not-allowed;
+  }
+}
+
+.success{
+  width: 24px;
+  height: 24px;
+}
+.picker {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sizes {
+  display: flex;
+  gap: 10px;
+}
+.spinnerWrapper{
+  height: 45px;
+  position: relative;
+}

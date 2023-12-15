@@ -1,0 +1,31 @@
+@import "@/styles/variables";
+
+.svg {
+    fill: currentColor;
+    height: auto;
+    max-width: 100vmin;
+    transform-origin: center;
+    width: 100%;
+}
+.container {
+    width: 218px;
+    height: 218px;
+    animation: spin 15s linear infinite;
+    @media (max-width: 710px) {
+        width: 112px;
+        height: 112px;
+    }
+    @media (max-width: $mobileSize) {
+        width: 84px;
+        height: 84px;
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

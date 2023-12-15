@@ -1,0 +1,95 @@
+.container {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  gap: 24px;
+}
+.name{
+  margin-bottom: 24px;
+}
+.imageWrapper {
+  height: fit-content;
+  width: 100%;
+}
+
+.image {
+  width: auto;
+  height: 100%;
+  max-height: 500px;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.review{
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 160px;
+}
+.title {
+  margin-bottom: 16px;
+}
+
+.additionalInfo {
+  margin-bottom: 24px;
+  display: flex;
+  gap: 90px;
+}
+.reviewText{
+  max-width: 470px;
+  text-align: center;
+}
+.reviewTitle{
+  text-align: center;
+}
+.reviewDesc{
+
+}
+.desc{
+  margin-bottom: 16px;
+}
+.info, .desc {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.old_price{
+  margin-left: 10px;
+  color: #6B6B6B;
+  text-decoration: line-through;
+}
+.btnContainer {
+  width: 100%;
+}
+
+.btn {
+  cursor: pointer;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.editBtn {
+  color: white;
+  background-color: #2D2D2D;
+  margin-bottom: 16px;
+}
+
+.deleteBtn {
+  border: 1px solid #2E2E2E;
+}
+.error{
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 32px;
+  color: red;
+}

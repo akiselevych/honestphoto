@@ -1,0 +1,112 @@
+.wrapper {
+  position: relative;
+
+  &:hover {
+    .overlay {
+      opacity: 1;
+    }
+
+    .deleteBtn {
+      opacity: 1;
+    }
+
+    .editBtn {
+      opacity: 1;
+    }
+  }
+}
+
+.overlay {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 20px); // including margin bottom in the height of image
+  background: rgba(0, 0, 0, 0.5);
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+
+  &Hovered {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 20px); // including margin bottom in the height of image
+    background: rgba(0, 0, 0, 0.5);
+    border: 2px solid #000;
+    transition-property: opacity;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+
+    &Active {
+      opacity: 1;
+    }
+  }
+}
+
+.deleteBtn {
+  opacity: 0;
+  position: absolute;
+  display: block;
+  top: 1rem;
+  left: 1rem;
+  max-width: 28px;
+  max-height: 28px;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 0px;
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+
+  &Wrapper {
+    display: block;
+    padding: 4px;
+    border-radius: 100%;
+    border: 1px solid #ebebeb;
+    max-width: 34px;
+    max-height: 34px;
+    width: 100%;
+    height: 100%;
+
+    background: #fff;
+  }
+}
+
+.editBtn {
+  opacity: 0;
+  position: absolute;
+  display: block;
+  top: 1rem;
+  right: 1rem;
+  max-width: 28px;
+  max-height: 28px;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 0px;
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+
+  &Wrapper {
+    display: block;
+    padding: 4px;
+    border-radius: 100%;
+    border: 1px solid #ebebeb;
+    max-width: 34px;
+    max-height: 34px;
+    width: 100%;
+    height: 100%;
+
+    background: #fff;
+  }
+}

@@ -1,0 +1,131 @@
+@import "@/styles/variables";
+.container{
+  display: flex;
+  max-width: 488px;
+  height: fit-content;
+  margin-bottom: 48px;
+}
+
+.content{
+  color: $textGreyColor;
+}
+.title{
+  margin-bottom: 12px;
+}
+.price{
+  margin-bottom: 16px;
+}
+.bookLink{
+  color: $textGreyColor;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.image{
+  object-fit: cover;
+  @media (max-width: 1061px) {
+    max-width: 358px;
+    max-height: 436px;
+    height: auto;
+    width: 100%;
+  }
+
+}
+
+.variant1{
+  justify-content: space-between;
+  gap: 17px;
+  & > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  & > img {
+    max-width: 238px;
+    max-height: 268px;
+  }
+  .small{
+    max-width: 256px;
+    max-height: 261px;
+  }
+  @media (max-width: 1061px) {
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    gap: 24px;
+    & > img, .small{
+      max-width: 100%;
+      max-height: 100%;
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+.variant3{
+  gap: 32px;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+  & > img {
+    max-width: 488px;
+    max-height: 321px;
+  }
+  .small{
+    max-width: 362px;
+    max-height: 200px;
+  }
+  @media (max-width: 1061px) {
+    align-items: flex-start;
+    gap: 24px;
+    & > img, .small{
+      max-width: 100%;
+      max-height: 100%;
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+.variant2{
+  gap: 32px;
+  flex-direction: column-reverse;
+  & > img {
+    max-width: 488px;
+    max-height: 316px;
+  }
+  @media (max-width: 1061px) {
+    gap: 24px;
+    & > img, .small{
+      max-width: 100%;
+      max-height: 100%;
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+.variant4{
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  gap: 17px;
+  & > img {
+    max-width: 220px;
+    max-height: 316px;
+  }
+  .small{
+    max-width: 220px;
+    max-height: 261px;
+  }
+  & > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  @media (max-width: 1061px) {
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    gap: 24px;
+    & > img, .small{
+      max-width: 100%;
+      max-height: 100%;
+      width: 100%;
+      height: auto;
+    }
+  }
+}

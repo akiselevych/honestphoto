@@ -1,0 +1,34 @@
+.container{
+  width: 280px;
+  margin: 0 auto;
+}
+.title{
+  margin-bottom: 12px;
+}
+.desc{
+  margin-bottom: 32px;
+}
+.image{
+  object-fit: cover;
+  width: 280px;
+  height: 156px;
+  margin-bottom: 24px;
+}
+.discout{
+  margin-bottom: 24px;
+}
+.activeBtn{
+
+}
+.btn{
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.subtitle{
+  margin-bottom: 12px;
+}
+.subdesc{
+  margin-bottom: 32px;
+}

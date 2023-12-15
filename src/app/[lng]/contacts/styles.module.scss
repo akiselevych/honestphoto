@@ -1,0 +1,27 @@
+
+.title{
+  margin-right: 15%;
+  width: 65%;
+  text-align: right;
+  @media (max-width: 755px) {
+    width: 100%;
+  }
+  @media (max-width: 470px) {
+    margin-right: 0;
+  }
+  @media (max-width: 370px) {
+    margin-right: 15px;
+    font-size: 24px !important;
+  }
+}
+.image{
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+}
+
+.linksWrapper{
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}

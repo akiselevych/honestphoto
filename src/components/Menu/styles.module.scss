@@ -1,0 +1,19 @@
+@import "@/styles/variables";
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.BDBDBD {
+    color: #bdbdbd;
+}
+.item {
+    color: #cfcfcf;
+}
+.grayColor {
+    color: $textGreyColor;
+}
+.blackColor {
+    color: $primaryColor;
+}

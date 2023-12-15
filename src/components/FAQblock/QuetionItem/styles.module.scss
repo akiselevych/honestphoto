@@ -1,0 +1,17 @@
+.quetionsItem {
+    cursor: pointer;
+    width: 100%;
+    padding: 16px 0;
+    border-bottom: 1px solid #ebebeb;
+}
+.activeItem {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    border-bottom: none;
+}
+.topRow {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}

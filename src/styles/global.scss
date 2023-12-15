@@ -1,0 +1,57 @@
+@import "@/styles/reset";
+@import "@/styles/variables";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../../fonts/Montserrat/static/Montserrat-Thin.ttf");
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url("../../fonts/Montserrat/static/Montserrat-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url("../../fonts/Montserrat/static/Montserrat-Medium.ttf");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url("../../fonts/Montserrat/static/Montserrat-SemiBold.ttf");
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url("../../fonts/Montserrat/static/Montserrat-Bold.ttf");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url("../../fonts/Montserrat/static/Montserrat-ExtraBold.ttf");
+    font-weight: 800;
+    font-style: normal;
+}
+
+body {
+    color: #2e2e2e;
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-wrap: break-word;
+}

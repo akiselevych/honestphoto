@@ -1,0 +1,29 @@
+@import "@/styles/variables";
+.container {
+    padding: 96px 16px;
+    background-color: $primaryColor;
+    background: url("../../../public/images/Bg.png") 0 0/30px 30px repeat;
+}
+.wrapper{
+    margin: 0 auto;
+    max-width: 1440px;
+}
+.reviewCard {
+    max-width: 468px;
+    color: $textGreyColor;
+    margin: 0 auto;
+    text-align: center;
+    padding-left: 36px;
+    padding-right: 36px;
+}
+.name {
+    margin-bottom: 32px;
+}
+.line {
+    width: 40px;
+    height: 3px;
+    margin: 0 auto 32px;
+}
+.text {
+    margin-bottom: 64px;
+}

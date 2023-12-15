@@ -1,0 +1,25 @@
+
+
+.title{
+  width: 50%;
+  margin-right: 11%;
+  @media (max-width: 455px) {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 20px;
+  }
+}
+
+.linksWrapper{
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+.link{
+
+}
+.image{
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+}

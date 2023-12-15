@@ -1,0 +1,76 @@
+.splide {
+  padding: 20px 0 20px 164px;
+  @media (max-width: 1180px) {
+    padding: 20px 0 20px 60px;
+  }
+  @media (max-width: 1040px) {
+    padding: 20px 0 20px 5px;
+  }
+}
+.splide__track{
+  padding-top: 146px;
+  padding-bottom: 196px;
+}
+.splide__list{
+  display: flex;
+  align-items: center;
+
+}
+// Generic Slide
+.splide__slide {
+  img:nth-child(2){
+    display: none;
+  }
+  .article{
+    //display: none;
+  }
+  .bookButton{
+    display: none;
+  }
+  .upperdecor{
+    display: none;
+  }
+}
+
+// Active Slide
+.splide__slide.is-active {
+  width: auto;
+  height: 515px;
+  .discount{
+    display: none;
+  }
+  .smallImage{
+    display: none;
+  }
+  .bigImage{
+    display: block;
+    width: auto;
+    height: 515px;
+  }
+  .article{
+    display: block;
+  }
+  .upperdecor{
+    display: block;
+  }
+}
+.splide__slide.is-next {
+  width: auto;
+  height: 156px;
+  .bookButton{
+    display: block;
+  }
+}
+// Arrow Tweaks for Accessibility
+.splide .splide__arrow {
+  top: 95%;
+  height: 25px;
+  transform: none;
+  border-radius: unset;
+  width: 165px;
+  background-color: transparent;
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+}

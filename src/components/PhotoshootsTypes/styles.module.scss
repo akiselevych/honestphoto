@@ -1,0 +1,103 @@
+@import "@/styles/variables";
+
+.container {
+    padding: 96px 0;
+    background-color: $primaryColor;
+    background: url("../../../public/images/Bg.png") 0 0/30px 30px repeat;
+    display: flex;
+    justify-content: center;
+}
+.content {
+    max-width: 1040px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 96px;
+    color: $textGreyColor;
+    padding: 0 8px;
+}
+.topRaw {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.title {
+    max-width: 258px;
+}
+
+.viewMoreLink {
+    color: $textGreyColor;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 700;
+    white-space: nowrap;
+    @media (max-width: 425px) {
+        margin-left: -30px;
+    }
+}
+
+.bottomRaw {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 956px) {
+        flex-direction: column;
+        gap: 32px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.photoshootItem {
+    margin-top: 34px;
+    @media (max-width: $mobileSize) {
+        width: 100%;
+    }
+}
+.centerCard {
+    margin-top: 0px;
+}
+.imageWrapper {
+    margin-bottom: 32px;
+    @media (max-width: $mobileSize) {
+        width: 100%;
+    }
+    img {
+        width: 265px;
+        height: 218px;
+        object-fit: cover;
+        @media (max-width: 956px) {
+            width: 358px;
+            height: auto;
+        }
+        @media (max-width: $mobileSize) {
+            width: 100%;
+        }
+    }
+}
+.centarlImageWrapper {
+    img {
+        width: 398px;
+        height: 252px;
+        @media (max-width: 956px) {
+            width: 358px;
+            height: auto;
+        }
+        @media (max-width: $mobileSize) {
+            width: 100%;
+        }
+    }
+}
+
+.photoshootName {
+    margin-bottom: 16px;
+}
+.photoshootPrice {
+    margin-bottom: 20px;
+}
+.photoshootBook {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: $textGreyColor;
+}

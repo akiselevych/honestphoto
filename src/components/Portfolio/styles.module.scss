@@ -1,0 +1,85 @@
+@import "@/styles/variables";
+.container {
+    background-color: $primaryColor;
+    background: url("../../../public/images/Bg.png") 0 0/30px 30px repeat;
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+.wrapper{
+    max-width: 1440px;
+    margin:  0 auto;
+}
+.header {
+    color: $textGreyColor;
+    width: 72%;
+    margin: 0 auto 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    @media (max-width: 1320px) {
+        width: 95%;
+    }
+}
+.text {
+    margin-right: 24px;
+}
+.title {
+    margin-bottom: 24px;
+}
+.desc {
+}
+.giftLink {
+    color: $textGreyColor;
+    display: flex;
+    align-items: center;
+}
+.content {
+    width: 72%;
+    margin: 0 auto 64px;
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 1320px) {
+        width: 95%;
+    }
+    @media (max-width: 1024px) and (min-width: 750px) {
+        justify-content: space-evenly;
+    }
+    @media (max-width: 675px) {
+        justify-content: center;
+    }
+}
+.item {
+    width: 312px;
+    object-fit: cover;
+    margin-bottom: 14px;
+
+    @media (max-width: 675px) {
+        width: 100%;
+        height: auto;
+    }
+}
+.masonry {
+    display: flex;
+}
+
+.bigCol{
+    @media (max-width: 1024px) {
+        display: none;
+    }
+}
+.mediumCol{
+    width: 312px;
+    @media (min-width: 1025px){
+        display: none;
+    }
+    @media (max-width: 675px) {
+        display: none;
+    }
+}
+.smallCol{
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 676px) {
+        display: none;
+    }
+}
